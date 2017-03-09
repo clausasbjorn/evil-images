@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Threading.Tasks;
 using Microsoft.Azure; 
 using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace evil_images.Controllers
 {
     [RoutePrefix("")]
-    public class ValuesController : ApiController
+    public class EvilApiController : ApiController
     {
         [Route("image")]
         [HttpPost]
