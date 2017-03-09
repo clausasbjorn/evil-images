@@ -9,6 +9,13 @@ namespace evil_images.Controllers
     [RoutePrefix("")]
     public class EvilApiController : ApiController
     {
+        [Route("")]
+        [HttpGet]
+        public async Task<string> Welcome()
+        {
+            return "You are heading for the evilest API!";
+        }
+
         [Route("image")]
         [HttpPost]
         public async Task<string> UploadImage()
